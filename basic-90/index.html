@@ -211,7 +211,7 @@
   function checkLoginState() {
   FB.getLoginStatus(function(response) {
     if(response.status == 'connected'){
-      window.location = "http://localhost/gunstore/basic-90/landing.html";
+      window.location = "/landing";
     }
   });
 }
@@ -264,7 +264,7 @@ function onSignIn(googleUser) {
    data-onsuccess="onSignIn"
    data-scope="https://www.googleapis.com/auth/plus.login"
    data-accesstype="offline"
-   data-redirecturi="http://localhost/gunstore/basic-90/landing.html"></div>
+   data-redirecturi="/landing"></div>
 
 
 
